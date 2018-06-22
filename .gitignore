@@ -1,0 +1,17 @@
+# Backup files
+#
+*~
+
+# OS X
+#
+.DS_Store
+
+# Node
+#
+*.log
+node_modules
+
+# VSCode
+#
+*.vscode
+settings.json
