@@ -13,13 +13,13 @@
     "database": "todos-test",
     "host": "127.0.0.1",
     "port": 5432,
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
+    "username": "postgres",
+    "password": "vitor",
+    "database": "todos-prod",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   }
 }
