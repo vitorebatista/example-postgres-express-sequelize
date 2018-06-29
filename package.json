@@ -1,5 +1,5 @@
 {
-  "name": "postgres-express-react-node-tutorial",
+  "name": "example-postgres-express-sequelize",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Vitor Emanuel Batista",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
