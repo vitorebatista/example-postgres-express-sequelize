@@ -1,6 +1,6 @@
 # Postgres + Express + Sequelize Example
 
-This repository demonstrates the usage of Sequelize within an [Express](https://expressjs.com) and Postgres application.
+This repository demonstrates the usage of [Sequelize](http://docs.sequelizejs.com/) within an [Express](https://expressjs.com) and [PostgreSQL](https://www.postgresql.org/) application.
 The implemented logic is a simple Todo.
 
 
