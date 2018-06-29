@@ -1,10 +1,14 @@
-import http  from 'http';
-const express = require('express');
-const logger = require('morgan');
-const bodyParser = require('body-parser');
+import http from 'http';
+import express from 'express';
+import logger from 'morgan';
+import bodyParser from 'body-parser';
 
 // Set up the express app
 const app = express();
+const port = parseInt(process.env.PORT, 10) || 8000;
+const server = http.createServer(app);
+
+app.set('port', port);
 
 // Log requests to the console.
 app.use(logger('dev'));
@@ -20,8 +24,4 @@ app.get('*', (req, res) => res.status(200).send({
 }));
 
 
-const port = parseInt(process.env.PORT, 10) || 8000;
-app.set('port', port);
-
-const server = http.createServer(app);
 server.listen(port);

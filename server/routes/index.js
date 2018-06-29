@@ -1,5 +1,7 @@
-const todosController = require('../controllers').todos;
-const todoItemsController = require('../controllers').todoItems;
+import {
+  todos as todosController,
+  todoItems as todoItemsController
+} from '../controllers';
 
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
