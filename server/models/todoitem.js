@@ -8,6 +8,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BOOLEAN,
       defaultValue: false
     },
+    states: {
+      type:   DataTypes.ENUM,
+      values: ['active', 'pending', 'deleted'],
+      defaultValue: 'active'
+    }
   });
 
   TodoItem.associate = (models) => {
