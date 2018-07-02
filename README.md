@@ -6,18 +6,10 @@ The implemented logic is a simple Todo.
 
 ## Starting App
 
-**Without Migrations**
-
 ```
 npm install
-npm start:dev
-```
-
-**With Migrations**
-
-```
-npm install
-node_modules/.bin/sequelize db:migrate
+createdb todos-dev
+sequelize db:migrate
 npm start:dev
 ```
 
