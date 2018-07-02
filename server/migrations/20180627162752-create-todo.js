@@ -1,11 +1,12 @@
+const uuid = require('uuid/v4');
 module.exports = {
   up: (queryInterface, Sequelize) =>
     queryInterface.createTable('Todos', {
       id: {
         allowNull: false,
-        autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.UUID,
+        defaultValue: uuid()
       },
       title: {
         type: Sequelize.STRING,

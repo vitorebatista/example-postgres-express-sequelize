@@ -1,11 +1,12 @@
+const uuid = require('uuid/v4');
 module.exports = {
   up: (queryInterface, Sequelize) =>
     queryInterface.createTable('TodoItems', {
       id: {
         allowNull: false,
-        autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.UUID,
+        defaultValue: uuid()
       },
       content: {
         type: Sequelize.STRING,
@@ -24,7 +25,7 @@ module.exports = {
         type: Sequelize.DATE
       },
       todoId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.UUID,
         onDelete: 'CASCADE',
         references: {
           model: 'Todos',
