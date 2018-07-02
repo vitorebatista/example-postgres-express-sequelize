@@ -6,7 +6,7 @@ module.exports = {
         allowNull: false,
         primaryKey: true,
         type: Sequelize.UUID,
-        defaultValue: uuid()
+        defaultValue: uuid
       },
       content: {
         type: Sequelize.STRING,
@@ -26,6 +26,7 @@ module.exports = {
       },
       todoId: {
         type: Sequelize.UUID,
+        allowNull: false,
         onDelete: 'CASCADE',
         references: {
           model: 'Todos',
